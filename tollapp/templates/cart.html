@@ -1,0 +1,199 @@
+{%extends 'base3.html'%}
+{% load bootstrap4 %}
+{% block content %}
+{{ block.super}}
+<br><br><br>
+<div class="container">
+    <h3 style="color:#DD3A37;font-family: Lato, sans-serif;">Cart</h3>
+    <hr>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+
+            <p style="font-family: Lato, sans-serif;">
+                <i class="fa fa-exclamation-circle" style="font-size:20px;color: #B92F2D;"></i>
+                You cannot add another "FBK FOREX STRATEGIES" to your cart.
+            </p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <a href=""> <button
+                    style="background-color: #0784E3;border-radius: 20px;border: none;padding: 8px 37px;color: white;font-family: Lato, sans-serif;">View
+                    cart</button></a>
+
+        </div>
+    </div>
+
+    <br><br>
+    <div class="row" style="border-style:groove ;border-width:1px;border-color:lightgrey ;">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2">
+
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2">
+            <p style="font-family: Lato, sans-serif;">Product</p>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2">
+
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2">
+            <p style="font-family: Lato, sans-serif;">Price</p>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2">
+            <p style="font-family: Lato, sans-serif;">Quantity</p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2">
+            <p style="font-family: Lato, sans-serif;">Total</p>
+        </div>
+    </div>
+
+    <div class="row" style="border-style:groove ;border-width:1px;border-color:lightgrey ;border-top: none;">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2">
+            <img src="../../static/img/cartlogo.webp" alt="" style="width: 40%;">
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2">
+            <b>
+                <p style="font-family: Lato, sans-serif;">FOREX STRATEGIES</p>
+            </b>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2">
+
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2">
+            <b>
+                <p style="font-family: Lato, sans-serif;">R1,100.00</p>
+            </b>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2">
+            <b>
+                <p style="font-family: Lato, sans-serif;">1</p>
+            </b>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2">
+            <b>
+                <p style="font-family: Lato, sans-serif;">R1,100.00</p>
+            </b>
+        </div>
+
+    </div>
+
+    <div class="row" style="border-style:groove ;border-width:1px;border-color:lightgrey ;border-top: none;">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
+            <br>
+            <div class="form-group">
+
+                <input placeholder="Coupon code" type="text" class="form-control" name="name" required>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
+            <br>
+            <button
+                style="background-color: #0784E3;border-radius: 20px;border: none;padding: 8px 37px;color: white;font-family: Lato, sans-serif;">Apply
+                Coupon</button>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
+
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
+
+        </div>
+
+
+
+    </div>
+
+    <br>
+    <div class="row">
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6"></div>
+
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+
+            <div class="card">
+                <div class="card-header">
+                    <h5 style="color:#DD3A37;font-family: Lato, sans-serif;">Cart totals</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                            <b>
+                                <p>Subtotal</p>
+                            </b>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                            <b>
+                                <p>R1,100.00</p>
+                            </b>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                            <b>
+                                <p>Total</p>
+                            </b>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                            <b>
+                                <p>R1,100.00</p>
+                            </b>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                        </div>
+
+                    </div>
+                    <div class="row">
+                            <div class="col text-center">
+                                <hr>
+                                <br>
+                                <a href="{% url 'checkout' %}">
+                        <button style="background-color: #0784E3;border-radius: 20px;border: none;padding: 8px 37px;color: white;font-family: Lato, sans-serif;">Proceed
+                            to checkout</button>
+                        </a>
+
+
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<br>
+<section style="background-color: #0784E3;">
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                <p style="font-size: 13px;color: white;">RISK WARNING: Forex trading involves significant risk of
+                    capital, read terms & conditions</p>
+
+
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+
+                <p style="font-size: 13px;color: white;">A division of Mmutlane Traders | In partnership with Mosetekoa
+                    Logistics | Host Integrado</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</section>
+{% endblock %}

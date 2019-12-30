@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>Forex Broker KIller</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="prerender stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+  <a href="{% url 'vid1' %}" class="w3-bar-item w3-button">Modification of one minute strategy</a>
+  <a href="{% url 'vid2' %}" class="w3-bar-item w3-button">Forex one minute strategy</a>
+  <a href="{% url 'vid3' %}" class="w3-bar-item w3-button">Introduction to FBK Strategies</a>
+  <a href="{% url 'vid4' %}" class="w3-bar-item w3-button">Signal 1-23-27 Sept 2019</a>
+  <a href="{% url 'vid5' %}" class="w3-bar-item w3-button">Signal 2-30th Sept- 4th oct 2019</a>
+  <a href="{% url 'vid6' %}" class="w3-bar-item w3-button">Signal 3-7 to 11 Oct 2019</a>
+  <a href="{% url 'vid7' %}" class="w3-bar-item w3-button">Signal 4-14 to 18 Oct 2019</a>
+  <a href="{% url 'vid8' %}" class="w3-bar-item w3-button">Signal 5-21 to 25 Oct 2019</a>
+  <a href="{% url 'vid9' %}" class="w3-bar-item w3-button">Signal 6-28  Oct to 1 Nov</a>
+  <a href="{% url 'vid10' %}" class="w3-bar-item w3-button">Signal 7|4-8 Nov</a>
+  <a href="#" class="w3-bar-item w3-button">Signal 8|11-15 Nov 2019</a>
+  <a href="#" class="w3-bar-item w3-button">Signal 9|18-22 Nov 2019</a>
+</div>
+
+<div class="w3-main" style="margin-left:200px">
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+   <a href="{% url 'home' %}">
+            <img src="https://fbkonlineservices.com/wp-content/uploads/2019/09/cropped-fbklog-4-170x113.png" alt="">
+          </a>
+  </div>
+</div>
+
+<div class="w3-container">
+  <h1 style="color: red;">Signal 1 – 23 – 27 Sept 2019</h1>
+  <br><br><br>
+  
+
+  
+</div>
+<iframe width="1100" height="630" allowfullscreen src="https://player.vimeo.com/video/361660513?autoplay=1&amp;color&amp;autopause=0&amp;loop=0&amp;muted=0&amp;title=1&amp;portrait=1&amp;byline=1#t=" style="max-width: 100%;"></iframe>
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+     
+</body>
+</html>

@@ -1,0 +1,49 @@
+{%extends "regbase.html"%}
+{% load bootstrap4 %}
+{% load static %}
+{% block content %}
+    <br><br><br><br><br><br><br>
+    <div class="container">
+        <div class="row">
+                <div class="col text-center">
+    <div class="card">
+
+        <div class="card-body">
+    <form>
+        <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
+        
+          <h3>Buy The FBK Strategies Online Course Today.</h3>
+          <button type="button" onClick="payWithRave()" class="btn btn-primary btn-block">Buy Now</button>
+      </form>
+        </div>
+    </div>
+                </div>
+        </div>
+    </div>
+    
+      <script>
+          const publicKey = "{{ key }}";
+  
+          function payWithRave() {
+              var x = getpaidSetup({
+                  PBFPubKey: publicKey,
+                  customer_email: "youremailaddress@gmail.com",
+                  amount: 50,
+                  customer_phone: "234099940409",
+                  currency: "USD",
+                  txref: "rave-123456",
+                  custom_title: "Wildlife Park",
+                  onclose: function() {},
+                  callback: function(response) {
+                      var txref = response.tx.txRef;
+                      console.log("This is the response returned after a charge", response);
+                      x.close();
+                  }
+              });
+          }
+      </script>
+        {% endblock %}
+
+
+
+       

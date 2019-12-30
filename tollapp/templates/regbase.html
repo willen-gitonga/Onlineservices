@@ -1,0 +1,30 @@
+{%load bootstrap4%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Forex Broker Killer</title>
+    {%block styles%}
+    {%bootstrap_css%}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {%endblock%}
+</head>
+
+<body>
+    {%include "navbar6.html"%}
+    
+    {%block content%}
+
+    {%block scripts%}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/6a129e1dba.js"></script>
+    <script src="{% static 'djangorave/js/payment.js' %}"></script>
+    {%bootstrap_javascript%}
+    {%endblock%}
+
+    {%endblock%}
+</body>
+
+</html>

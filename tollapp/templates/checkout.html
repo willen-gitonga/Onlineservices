@@ -1,0 +1,111 @@
+{%extends 'base4.html'%}
+{% load bootstrap4 %}
+{% block content %}
+{{ block.super}}
+<br><br><br>
+<div class="container">
+    <h3 style="color:#DD3A37;font-family: Lato, sans-serif;">Check out</h3>
+    <hr>
+    <p>
+    <i class='far fa-calendar' style='font-size:24px'></i>
+    Returning customer? <a href="{% url 'portal' %}" style="color: black;">Click here to login</a> 
+</p>
+<br><br>
+
+<div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+<form method="post" novalidate>
+        {% csrf_token %}
+        {%bootstrap_form form%}
+        <br>
+        <div class="col text-center">
+                <a href="{% url 'payout' %}">                
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Place order</button>
+                </a>
+
+        <br><br>
+        </div>
+</form>
+</div>
+
+<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+        <h5 style="color:#DD3A37;font-family: Lato, sans-serif;">Your order</h5>
+<div class="row" style="border-style:groove ;border-color:lightgrey ;">
+    
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <p style="font-family: Lato, sans-serif;">Product</p>
+            
+            </div>
+            <!-- <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"></div> -->
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                    <p style="font-family: Lato, sans-serif;">Total</p>
+        <br>
+                </div>
+            
+       
+         
+         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                <p style="font-family: Lato, sans-serif;">FBK FOREX STRATEGIES  × 1</p>
+                <br>
+                </div>
+                
+    
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                        <p style="font-family: Lato, sans-serif;">R1,100.00</p>
+            
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                           <b> <p style="font-family: Lato, sans-serif;">Subtotal</p></b>
+                            <br>
+                            </div>
+                            
+                
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                                   <b> <p style="font-family: Lato, sans-serif;">R1,100.00</p></b>
+                        
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                                        <b> <p style="font-family: Lato, sans-serif;">Total</p></b>
+                                         <br>
+                                         </div>
+                                         
+                             
+                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                                                <b> <p style="font-family: Lato, sans-serif;">R1,100.00</p></b>
+                                     
+                                             </div>
+                                             <div class="container">
+                                             <p>Your personal data will be used to process your order, <br> support your experience throughout this website, and for <br>other purposes described in our privacy policy.</p>
+                                           
+                                            <b> <input type="checkbox" name="data" value="data">  I have read and agree to the website terms and conditions *<br></b>
+
+                                            <br><br>
+                                            </div>
+</div>
+</div>
+</div>
+
+</div>
+<br><br>
+<section style="background-color: #0784E3;">
+        <br>
+    <div class="container">
+        <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+    <p style="font-size: 13px;color: white;">RISK WARNING: Forex trading involves significant risk of capital, read terms & conditions</p>
+    
+    
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+    
+    <p style="font-size: 13px;color: white;">A division of Mmutlane Traders | In partnership with Mosetekoa Logistics | Host Integrado</p>
+    </div>
+        </div>
+    </div>
+    <br>
+    </section>
+
+{% endblock %}

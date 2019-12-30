@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  
+  <link rel="prerender stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- Custom styles for this template -->
+
+<link href="../../static/css/nav.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <div class="Navbar">
+    <div class="Navbar__Link Navbar__Link-brand">
+        <a href="{% url 'home' %}">
+            <img src="https://fbkonlineservices.com/wp-content/uploads/2019/09/cropped-fbklog-4-170x113.png" alt="">
+          </a>
+     </div>
+     <div class="Navbar__Link Navbar__Link-toggle">
+       <i class="fas fa-bars" style="font-size: 30px;margin-top:26px ;"></i>
+     </div>
+   <nav class="Navbar__Items Navbar__Items--right" style="margin-top: 46px;">
+     <div class="Navbar__Link">
+       <a href="{% url 'home' %}" style="color: white;" class="nav-link">
+       Home
+      </a>
+     </div>
+     <div class="Navbar__Link">
+        <a href="{% url 'portal' %}" style="color: white;font-size: 17px;" class="nav-link">
+            My Accout
+           </a>
+     </div>
+     <div class="Navbar__Link">
+        <a href="{% url 'courses' %}" style="color: white;" class="nav-link">
+         All courses
+           </a>
+     </div>
+     
+     <div class="Navbar__Link">
+        <a href="{% url 'contact' %}" style="color: white;" class="nav-link">
+           Contact
+           </a>
+     </div>
+
+     <div class="Navbar__Link">
+        <a href="" style="color: white;" class="nav-link">
+           Free Tutorials
+           </a>
+     </div>
+
+     <div class="Navbar__Link">
+        <a href="{% url 'results' %}" style="color: white;" class="nav-link">
+           Results
+           </a>
+     </div>
+
+     <div class="Navbar__Link">
+        <a href="{% url 'about' %}" style="color: white;" class="nav-link">
+            About
+           </a>
+     </div>
+   </nav>
+ </div>
+
+
+ <script>
+ 
+ function classToggle() {
+  const navs = document.querySelectorAll('.Navbar__Items')
+  
+  navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+}
+
+document.querySelector('.Navbar__Link-toggle')
+  .addEventListener('click', classToggle);
+ 
+ </script>
+
+ <style>
+ 
+ 
+ .Navbar {
+  background-color: #28316C;
+  display: flex;
+  padding: 16px;
+  font-family: sans-serif;
+  color: white;
+}
+
+.Navbar__Link {
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.Navbar__Items {
+  display: flex;
+}
+
+.Navbar__Items--right {
+  margin-left:auto;
+}
+
+.Navbar__Link-toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .Navbar__Items,
+  .Navbar {
+    flex-direction: column;
+  }
+    
+.Navbar__Items {
+    display:none;
+  }
+    
+.Navbar__Items--right {
+    margin-left:0;
+  }
+    
+.Navbar__ToggleShow {
+    display: flex;
+  }
+    
+.Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+   } 
+}
+ 
+ </style>
+</body>
+
+
+
+</html>

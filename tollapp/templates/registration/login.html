@@ -1,0 +1,48 @@
+{%extends "regbase.html"%}
+{% load bootstrap4 %}
+{% block content %}
+
+<div class="container">
+  <h3 style="text-align: center;">Welcome the home of forex broker killer</h3>
+
+  <br>
+  <b>  <p style="text-align: center;">FBK Exclusive 2020 Version Strategies</p></b>
+<br>
+<p style="text-align: center;color: blue;">Forex One Minute Strategy | Modifications Of Forex One Minute Strategy | Coachrection</p>
+<br>
+<div class="col text-center">
+<a href="{% url 'cart' %}">    
+    <button style=" text-align: center;padding: 8px 37px; display: inline-block;border: none;background-color:blue;color: white;">Pay Online Now!</button>
+</a>
+</div>
+</div>
+<br><br><br><br>
+<div class="container-fluid">
+  <div class="row">
+    <!-- Empty div -->
+     <div class="card" style="width: 100%;">
+        <div class="card-body">
+
+          <form  action="/accounts/login/" method="post" style="width: 100%;">
+            {% csrf_token %}
+            {% bootstrap_form form%}
+            <b> <input type="checkbox" name="data" value="data"> Remember me<br></b>
+            <br>
+            <div class="form-group">
+              
+              <input type="submit"  style="background-color: #0784E3;border-radius: 20px;border: none;padding: 8px 37px;color: white;" value="Login">
+            </div>
+
+            <input type="hidden" name="next" value="{{next}}">
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+   
+    
+  </div>
+
+{% endblock %}
