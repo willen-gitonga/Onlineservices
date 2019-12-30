@@ -3,13 +3,8 @@ from django.contrib.auth.models import User
 
 class Billing(models.Model):
     PAY_CHOICES = [
-        ('Paypal', 'Paypal'),
-        ('Skrill', 'Skrill'),
-        ('Neteller', 'Neteller'),
-        ('PerfectMoney', 'Perfect Money'),
-        ('Bitcoin', 'Bitcoin'),
-        ('Luno','Luno'),
-        ('Bitpay','Bitpay'),    
+        ('Card', 'Card'),
+       
     ]
     First_name = models.CharField(max_length =40)
     Last_name = models.CharField(max_length =40)
