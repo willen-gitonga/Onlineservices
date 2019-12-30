@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'tollapp',
     'bootstrap4',
-    'djangorave'
+    
 ]
 
 MIDDLEWARE = [
