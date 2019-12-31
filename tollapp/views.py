@@ -53,6 +53,23 @@ def vid9(request):
 
 def vid10(request):
     return render(request,'vid10.html')
+    
+def vid11(request):
+    return render(request,'vid11.html')
+def vid12(request):
+    return render(request,'vid12.html')
+
+def vid13(request):
+    return render(request,'vid13.html')
+
+def vid14(request):
+    return render(request,'vid14.html')
+
+def vid15(request):
+    return render(request,'vid15.html')
+
+def vid16(request):
+    return render(request,'vid16.html')
 
 
 def checkout(request):

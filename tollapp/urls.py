@@ -21,6 +21,12 @@ urlpatterns=[
     path('video8/', views.vid8, name='vid8'),
     path('video9/', views.vid9, name='vid9'),
     path('video10/', views.vid10, name='vid10'),
+    path('video11/', views.vid11, name='vid11'),
+    path('video12/', views.vid12, name='vid12'),
+    path('video13/', views.vid13, name='vid13'),
+    path('video14/', views.vid14, name='vid14'),
+    path('video15/', views.vid15, name='vid15'),
+    path('video16/', views.vid16, name='vid16'),
     path('payout/', views.HomePageView.as_view(), name='payout'),
     
 
