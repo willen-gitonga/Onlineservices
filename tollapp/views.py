@@ -20,21 +20,10 @@ def about(request):
     return render(request,'about.html')
 def cart(request):
     return render(request,'cart.html')
-def payout(request):
-    return render(request,'pay.html')
 
 def results(request):
     return render(request,'results.html')
     
-def payments(request):
-    return render(request,'transaction.html')
-
-def nett(request):
-    return render(request,'transactionnett.html')
-
-def btc(request):
-    return render(request,'transactionbtc.html')
-
 def vid1(request):
     return render(request,'vid1.html')
 

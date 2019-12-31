@@ -9,9 +9,6 @@ urlpatterns=[
     path('shopping/', views.courses, name='courses'),
     path('about/', views.about, name='about'),
     path('checkout/', views.checkout, name='checkout'),
-    path('transaction/', views.payments, name='transaction'),
-    path('transactionbtc/', views.btc, name='transactionbtc'),
-    path('transactionnett/', views.nett, name='transactionnett'),
     path('results/',views.results, name='results'),    
     path('portal/', views.portal, name='portal'),
     path('video1/', views.vid1, name='vid1'),
@@ -24,7 +21,7 @@ urlpatterns=[
     path('video8/', views.vid8, name='vid8'),
     path('video9/', views.vid9, name='vid9'),
     path('video10/', views.vid10, name='vid10'),
-    path('payout/', views.HomePageView.as_view(), name='homepage'),
+    path('payout/', views.HomePageView.as_view(), name='payout'),
     
 
 
