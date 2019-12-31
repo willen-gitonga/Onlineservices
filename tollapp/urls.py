@@ -28,7 +28,8 @@ urlpatterns=[
     path('video15/', views.vid15, name='vid15'),
     path('video16/', views.vid16, name='vid16'),
     path('payout/', views.HomePageView.as_view(), name='payout'),
-    
-
+    path('pay/', views.paypal, name='pay'),
+    path('processing/', views.perfect, name='paid'),
+    path('btc/', views.btc, name='btc'),
 
 ]

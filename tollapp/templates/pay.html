@@ -2,25 +2,159 @@
 {% load bootstrap4 %}
 {% load static %}
 {% block content %}
-    <br><br><br><br><br><br><br>
+    <br><br><br>
     <div class="container">
         <div class="row">
-                <div class="col text-center">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
+                    <br>
     <div class="card">
 
         <div class="card-body">
     <form>
         <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
         
-          <h3>Buy The FBK Strategies Online Course Today.</h3>
+        <img src="../../static/img/cards.png" alt="" class="img-fluid" style="width: 270px;">
           <button type="button" onClick="payWithRave()" class="btn btn-primary btn-block">Buy Now</button>
       </form>
         </div>
     </div>
                 </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
+                    <br>
+                    <div class="card">
+
+                        <div class="card-body">
+                            <div class="row">
+                                    <div class="col text-center">
+                            <img src="../../static/img/paypallogo.jpg" alt="" class="img-fluid" style="width: 180px;">
+                                    </div>
+                        </div>
+                        <a href="{% url 'pay' %}" class="btn btn-primary btn-block">Buy Now</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
+                        <br>
+                        <div class="card">
+    
+                            <div class="card-body">
+                                <div class="row">
+                                        <div class="col text-center">
+                                <img src="../../static/img/skrill_logo.jpg" alt="" class="img-fluid" style="width: 270px;">
+                                        </div>
+                            </div>
+                            <a href="{% url 'pay' %}" class="btn btn-primary btn-block">Buy Now</a>
+                            </div>
+                        </div>
+
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
+                        <br>
+                        <div class="card">
+    
+                            <div class="card-body">
+                                <div class="row">
+                                        <div class="col text-center">
+                                <img src="../../static/img/netellerlogo.png" alt="" class="img-fluid" style="width: 200px;">
+                                        </div>
+                            </div>
+                            <a href="{% url 'paid' %}" class="btn btn-primary btn-block">Buy Now</a>
+                            </div>
+                        </div>
+
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
+                        <br>
+                        <div class="card">
+    
+                            <div class="card-body">
+                                <div class="row">
+                                        <div class="col text-center">
+                                <img src="../../static/img/perfectmoneylogo.png" alt="" class="img-fluid" style="width: 280px;">
+                                        </div>
+                            </div>
+                            <a href="{% url 'paid' %}" class="btn btn-primary btn-block">Buy Now</a>
+                            </div>
+                        </div>
+
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
+                        <br>
+                        <div class="card">
+    
+                            <div class="card-body">
+                                <div class="row">
+                                        <div class="col text-center">
+                                <img src="../../static/img/bitcoin.jpg" alt="" class="img-fluid" style="width: 80px;">
+                                        </div>
+                            </div>
+                            <a href="{% url 'btc' %}" class="btn btn-primary btn-block">Buy Now</a>
+                            </div>
+                        </div>
+
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
+                        <br>
+                        <div class="card">
+    
+                            <div class="card-body">
+                                <div class="row">
+                                        <div class="col text-center">
+                                <img src="../../static/img/bitpay2.jpg" alt="" class="img-fluid" style="width: 160px;">
+                                        </div>
+                            </div>
+                            <a href="{% url 'btc' %}" class="btn btn-primary btn-block">Buy Now</a>
+                            </div>
+                        </div>
+
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
+                        <br>
+                        <div class="card">
+    
+                            <div class="card-body">
+                                <div class="row">
+                                        <div class="col text-center">
+                                <img src="../../static/img/luno.png" alt="" class="img-fluid" style="width: 165px;">
+                                        </div>
+                            </div>
+                            <a href="{% url 'btc' %}" class="btn btn-primary btn-block">Buy Now</a>
+                            </div>
+                        </div>
+
+                </div>
+
+
         </div>
     </div>
-    
+    <br><br><br>
+    <section style="background-color: #0784E3;">
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                        <p style="font-size: 13px;color: white;">RISK WARNING: Forex trading involves significant risk of
+                            capital, read terms & conditions</p>
+        
+        
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+        
+                        <p style="font-size: 13px;color: white;">A division of Mmutlane Traders | In partnership with Mosetekoa
+                            Logistics | Host Integrado</p>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </section>
+        
       <script>
           const publicKey = "{{ key }}";
   

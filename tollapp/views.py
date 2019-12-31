@@ -53,7 +53,7 @@ def vid9(request):
 
 def vid10(request):
     return render(request,'vid10.html')
-    
+
 def vid11(request):
     return render(request,'vid11.html')
 def vid12(request):
@@ -71,6 +71,14 @@ def vid15(request):
 def vid16(request):
     return render(request,'vid16.html')
 
+def paypal(request):
+    return render(request,'Paypal.html')
+
+def perfect(request):
+    return render(request,'perfect.html')
+
+def btc(request):
+    return render(request,'btc.html')
 
 def checkout(request):
     current_user = request.user
