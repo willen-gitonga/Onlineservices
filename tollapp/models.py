@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 
 class Billing(models.Model):
     PAY_CHOICES = [
-        ('Card', 'Card'),
         ('Paypal', 'Paypal'),
         ('Skrill', 'Skrill'),
         ('Neteller', 'Neteller'),

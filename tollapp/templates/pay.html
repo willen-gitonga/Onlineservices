@@ -2,24 +2,13 @@
 {% load bootstrap4 %}
 {% load static %}
 {% block content %}
-    <br><br><br>
-    <div class="container">
-        <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
-                    <br>
-    <div class="card">
-
-        <div class="card-body">
-    <form>
-        <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
-        
-        <img src="../../static/img/cards.png" alt="" class="img-fluid" style="width: 270px;">
-          <button type="button" onClick="payWithRave()" class="btn btn-primary btn-block">Buy Now</button>
-      </form>
+    
+    <div class="container-fluid">
+        <div class="jumbotron" style="height: 50px;">
+            <p>Send your proof of payment to our email address <b style="color: red;">: Inquire.fbk@yahoo.com</b></p>
         </div>
-    </div>
-                </div>
-
+        <div class="row">
+            
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
                     <br>
                     <div class="card">
@@ -30,7 +19,7 @@
                             <img src="../../static/img/paypallogo.jpg" alt="" class="img-fluid" style="width: 180px;">
                                     </div>
                         </div>
-                        <a href="{% url 'pay' %}" class="btn btn-primary btn-block">Buy Now</a>
+                        <a href="https://www.paypal.com/" class="btn btn-primary btn-block">Buy Now</a>
                         </div>
                     </div>
 
@@ -46,7 +35,7 @@
                                 <img src="../../static/img/skrill_logo.jpg" alt="" class="img-fluid" style="width: 270px;">
                                         </div>
                             </div>
-                            <a href="{% url 'pay' %}" class="btn btn-primary btn-block">Buy Now</a>
+                            <a href="https://www.skrill.com/" class="btn btn-primary btn-block">Buy Now</a>
                             </div>
                         </div>
 
@@ -62,7 +51,7 @@
                                 <img src="../../static/img/netellerlogo.png" alt="" class="img-fluid" style="width: 200px;">
                                         </div>
                             </div>
-                            <a href="{% url 'paid' %}" class="btn btn-primary btn-block">Buy Now</a>
+                            <a href="https://www.neteller.com/" class="btn btn-primary btn-block">Buy Now</a>
                             </div>
                         </div>
 
@@ -78,13 +67,13 @@
                                 <img src="../../static/img/perfectmoneylogo.png" alt="" class="img-fluid" style="width: 280px;">
                                         </div>
                             </div>
-                            <a href="{% url 'paid' %}" class="btn btn-primary btn-block">Buy Now</a>
+                            <a href="https://perfectmoney.is/" class="btn btn-primary btn-block">Buy Now</a>
                             </div>
                         </div>
 
                 </div>
 
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
                         <br>
                         <div class="card">
     
@@ -94,12 +83,12 @@
                                 <img src="../../static/img/bitcoin.jpg" alt="" class="img-fluid" style="width: 80px;">
                                         </div>
                             </div>
-                            <a href="{% url 'btc' %}" class="btn btn-primary btn-block">Buy Now</a>
+                            <a href="https://localbitcoins.com/" class="btn btn-primary btn-block">Buy Now</a>
                             </div>
                         </div>
 
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
                         <br>
                         <div class="card">
     
@@ -109,13 +98,13 @@
                                 <img src="../../static/img/bitpay2.jpg" alt="" class="img-fluid" style="width: 160px;">
                                         </div>
                             </div>
-                            <a href="{% url 'btc' %}" class="btn btn-primary btn-block">Buy Now</a>
+                            <a href="https://bitpay.com/" class="btn btn-primary btn-block">Buy Now</a>
                             </div>
                         </div>
 
                 </div>
 
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
                         <br>
                         <div class="card">
     
@@ -125,7 +114,7 @@
                                 <img src="../../static/img/luno.png" alt="" class="img-fluid" style="width: 165px;">
                                         </div>
                             </div>
-                            <a href="{% url 'btc' %}" class="btn btn-primary btn-block">Buy Now</a>
+                            <a href="https://www.luno.com/" class="btn btn-primary btn-block">Buy Now</a>
                             </div>
                         </div>
 
@@ -133,8 +122,21 @@
 
 
         </div>
+        <div class="jumbotron" style="max-width: 100%;">
+                <p>Paypal payment address: <b>Fbkmerchantservices@gmail.com</b></p>
+                <p>Neteller payment address: <b>eadrian821@gmail.com</b></p>
+                <p>Skrill payment address: <b>Fbkmerchantservices@gmail.com</b></p>
+                <p>Perfect money payment address: <b>eadrian821@gmail.com</b></p>
+                <p>Bitpay payment address: <b>1x4iw8mZnca2M1Y5zyt3yLxtFEj83v5Fi</b></p>
+                <p>Luno payment address: <b>1x4iw8mZnca2M1Y5zyt3yLxtFEj83v5Fi</b></p>
+                <p>Bitcoin payment address: <b>1x4iw8mZnca2M1Y5zyt3yLxtFEj83v5Fi</b></p>
+
+
+
+
+             </div>
     </div>
-    <br><br><br>
+    
     <section style="background-color: #0784E3;">
             <br>
             <div class="container">
