@@ -80,6 +80,10 @@ def perfect(request):
 def btc(request):
     return render(request,'btc.html')
 
+
+def card(request):
+    return render(request,'cardcheckout.html')
+
 def checkout(request):
     current_user = request.user
 
@@ -94,6 +98,8 @@ def checkout(request):
 
     return render(request,'checkout.html',locals())
 
+        
+# The student portal
 @login_required(login_url='/accounts/login/')
 def  portal(request):
     return render(request,'student.html')
