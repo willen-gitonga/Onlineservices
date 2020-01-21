@@ -74,6 +74,9 @@ def vid16(request):
 def vid17(request):
     return render(request,'vid17.html')
 
+def vid18(request):
+    return render(request,'vid18.html')
+
 def paypal(request):
     return render(request,'Paypal.html')
 

@@ -28,6 +28,7 @@ urlpatterns=[
     path('video15/', views.vid15, name='vid15'),
     path('video16/', views.vid16, name='vid16'),
     path('video17/', views.vid17, name='vid17'),
+    path('video18/', views.vid17, name='vid17'),
     path('payout/', views.HomePageView.as_view(), name='payout'),
     path('pay/', views.paypal, name='pay'),
     path('processing/', views.perfect, name='paid'),
