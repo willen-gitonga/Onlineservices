@@ -155,5 +155,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 #     os.path.join(BASE_DIR, 'static'),
 # )
 
-RAVE_PUBLIC_KEY = 'FLWPUBK-0ca96b72f9f28787e3990441e716f390-X'
-RAVE_SECRET_KEY = 'FLWSECK-23d1459adf5f0aa6e504afa770d04886-X'
