@@ -114,9 +114,5 @@ def  portal(request):
 class HomePageView(TemplateView):
     template_name = 'pay.html'
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['key'] = settings.RAVE_PUBLIC_KEY
-        return context
-
+   
 
