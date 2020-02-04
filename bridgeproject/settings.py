@@ -25,10 +25,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '&ss0k)#2y+1_l^0%m9mf7l$yr3k44!u1t8^)2o5n*bnflj=s*x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = False
-DEBUG = True
-# ALLOWED_HOSTS = ['.fbkservices.com']
-ALLOWED_HOSTS = []
+DEBUG = False
+# DEBUG = True
+ALLOWED_HOSTS = ['.fbkservices.com']
+# ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -79,29 +79,29 @@ WSGI_APPLICATION = 'bridgeproject.wsgi.application'
 
 # Production database
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME':'myproject',
-#         'USER':'projectuser',
-#         'PASSWORD':'destiny30',
-#         'HOST':'localhost',
-#         'PORT':''
-#     }
-# }
-
-# Development
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME':'tollbridge',
-        'USER':'willen',
-        'PASSWORD':'123',
+        'NAME':'myproject',
+        'USER':'projectuser',
+        'PASSWORD':'destiny30',
         'HOST':'localhost',
         'PORT':''
     }
 }
+
+# Development
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME':'tollbridge',
+#         'USER':'willen',
+#         'PASSWORD':'123',
+#         'HOST':'localhost',
+#         'PORT':''
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -141,17 +141,17 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 # Remember to change this.
-# STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-
-# MEDIA_URL = '/media/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
-# Extra places for collectstatic to find static files.
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATIC_URL = '/static/'
+
+# # Extra places for collectstatic to find static files.
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, 'static'),
+# )
 
